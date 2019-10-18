@@ -1,7 +1,7 @@
 def prime?(integer)
-  counter = 2 
+  counter = yield(integer) 
   while counter < integer 
-    if integer % counter == 0 || integer == -1
+    if integer % counter == 0
       return false 
     end
     counter += 1 
