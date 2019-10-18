@@ -1,5 +1,5 @@
 def prime?(integer)
-  counter = yield(integer) 
+  counter = integer - 1  
   while counter < integer 
     if integer % counter == 0
       return false 
